@@ -22,8 +22,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       locale: DevicePreview.locale(context), //* for device_preview
       builder: DevicePreview.appBuilder, //* for device_preview
-      theme: ThemeData.light(),
-      darkTheme: ThemeData.dark(),
+      theme: ThemeData(useMaterial3: true),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
